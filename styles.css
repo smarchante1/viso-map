@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 80vh; /* Adjust height to ensure visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+svg {
+  width: 100%;
+  height: 100%; /* Ensure SVG scales correctly within the container */
+  stroke: #000; /* Add stroke color to ensure paths are visible */
+  fill: none; /* Ensure paths are not filled by default */
+}
+
+path {
+  cursor: pointer;
+  transition: fill 0.3s, stroke 0.3s;
+  stroke-width: 1; /* Ensure paths have a visible stroke width */
+}
+
+path:hover {
+  fill: rgba(0, 0, 0, 0.1) !important;
+  stroke: rgba(0, 0, 0, 0.5);
+}
+
+svg path {
+  pointer-events: stroke;
+}
