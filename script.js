@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const paths = document.querySelectorAll('svg path');
-
+  /* testing rusting git skills */
   paths.forEach((path) => {
     path.addEventListener('mouseover', () => {
       console.log(
